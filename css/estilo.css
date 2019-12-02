@@ -21,6 +21,9 @@ div.a {
   -moz-text-align-last: justify; 
   text-align-last: justify;
 }
+body {
+  background-color: yellow;
+}
 
 #main {
   width: 220px;
@@ -36,3 +39,4 @@ div.a {
    -webkit-flex: 1; 
    flex: 1;
 }
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZOkGJo9EhKiDLiMGxQiIzaMonJFlQmFQIyEF2PRNrCZ6qz_vJ" alt="Juntos" width="400" height="300">
