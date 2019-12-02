@@ -1,56 +1,80 @@
 h1 
 {
-    color: whitesmoke;
+    color: rgb(206, 255, 255);
     font-weight: bold;
-    font-size-adjust: 3.2;
-    text-align: end;
-    margin-left: 195px;
+    padding: 20px 0; 
+    text-shadow: 3px 3px 1px rgb(94, 92, 92);
+    text-align: center;
+    font-size: 60px;
 }
 
 h3
 {
-  color: rgb(136, 115, 88);
-  margin-left: 195px;
-  font-size-adjust: 1.8;
+  color: rgb(202, 253, 255);
+  text-align: center;
+  font-size: 35px;
+  text-shadow: gray;
+  padding: 20px 0; 
 
 }
 
-style
-p.a {
-  margin: 10px 5px 15px 20px;
+button {
+  background-color: rgb(122, 135, 192);
+  border-radius: 12px;
+  border: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.pointer {cursor: pointer;}
-
-p.b {
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  background-color: #00539F;
 }
 
 body {
   background-color: lightblue;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+ 
 }
 
 
 div.a {
-  text-align: auto; 
-  -moz-text-align-last: auto; 
-  text-align-last: auto;
+  text-align: center; 
+  color: whitesmoke;
+  text-shadow: rgb(76, 76, 156);
+  font-size: 29px;
 }
 
-
-#main {
-  width: 220px;
-  height: 300px;
-  border: 1px solid black; 
-  display: -webkit-flex; 
-  -webkit-align-items: center; 
-  display: flex;
-  align-items: center;
+div.c {
+  text-align: center;
+  color: rgb(46, 179, 255);
+  text-shadow: rgb(141, 132, 132);
+  font-size: 22px;
 }
 
-#main div {
-   -webkit-flex: 1; 
-   flex: 1;
+div.d {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 18px;
 }
+
+div.e
+{
+  text-align: center;
+  padding: 20px 0; 
+
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 

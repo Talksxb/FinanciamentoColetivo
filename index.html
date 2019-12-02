@@ -10,38 +10,42 @@
 <body>
     <h1>Ajude a nossa causa!</h1>
     
-    <h3>Já arrecadamos o total de: <span id="boxBalance">0</span>  <button onclick="gettotalarrecadado()">Clique aqui para saber!</button>
+    <h3>Já arrecadamos o total de: <span id="boxBalance">0</span>  
     </h3>
-
+    <div class="e">
+    <button onclick="gettotalarrecadado()">Clique aqui para saber!</button>
+    </div class="e">
     <hr>
     <form name="frmPayment" id="frmPayment" action="#" method="get" onsubmit="executePayment(); return false;">
-        <div.a>
+        <div class="a">
             <label for="doador">Queremos nos conectar com que nos ajuda! Deixe o seu e-mail aqui: </label>
-        </div.a>
-        <div.a>
+        </div class="a">
+        <div class="a">
             <input type="text" name="doador" id="doador">
-        </div.a>
-
-        <div.a>
-            <label for="amount"> O quanto você está disposto a nos ajudar: </label>
-        </div.a>
-        <div.a>
-            <input type="number" name="amount" id="amount" value=""> weis
-        </div.a>
+        </div class="a">
         <div>
             &nbsp;
         </div>
+        <div class="a">
+            <label for="amount"> O quanto você está disposto a nos ajudar: </label>
+        </div class="a">
+        <div class="d">
+            <input type="number" name="amount" id="amount" value=""> weis
+        </div class="d">
         <div>
+            &nbsp;
+        </div>
+        <div class="e">
            <p class="pointer">
             <button type="submit">Confirme a sua doação</button>
             </p>
-        </div>
+        </div class="e">
         <div>
             &nbsp;
         </div>
-        <div id="boxCommStatus">
+        <div class="c" id="boxCommStatus">
             Ajudar faz bem!
-        </div>
+        </div class="c">
     </form>
     <script charset="utf-8"
         src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
