@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/estilo.css">
     <title>Doações realizadas com Ether.</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <h1>Ajude a nossa causa!</h1>
-    <h3>Já arrecadamos o total de: <span id="boxBalance">0</span> - <button onclick="gettotalarrecadado()">Atualize o valor aqui</button></h3>
+    
+    <h3>Já arrecadamos o total de: <span id="boxBalance">0</span>  <button onclick="gettotalarrecadado()">Clique aqui para saber!</button>
+    </h3>
+
     <hr>
     <form name="frmPayment" id="frmPayment" action="#" method="get" onsubmit="executePayment(); return false;">
-        <div class ="a">
-            <label for="doador">Queremos nos conectar com que nos ajuda! Diga-nos o seu nome: </label>
-        </div>
-        <div>
+        <div.a>
+            <label for="doador">Queremos nos conectar com que nos ajuda! Deixe o seu e-mail aqui: </label>
+        </div.a>
+        <div.a>
             <input type="text" name="doador" id="doador">
-        </div>
-        <div>
+        </div.a>
+
+        <div.a>
             <label for="amount"> O quanto você está disposto a nos ajudar: </label>
-        </div>
-        <div>
-            <input type="number" name="amount" id="amount" value="1000000000000000"> weis
-        </div>
+        </div.a>
+        <div.a>
+            <input type="number" name="amount" id="amount" value=""> weis
+        </div.a>
         <div>
             &nbsp;
         </div>

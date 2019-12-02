@@ -1,20 +1,27 @@
 h1 
 {
-    color: blue;
+    color: whitesmoke;
     font-weight: bold;
+    font-size-adjust: 3.2;
+    text-align: end;
+    margin-left: 195px;
 }
 
-h1 {
-  position: absolute;
-  left: 100px;
-  top: 150px;
+h3
+{
+  color: rgb(136, 115, 88);
+  margin-left: 195px;
+  font-size-adjust: 1.8;
+
 }
 
-<style>
-p.ex1 {
+style
+p.a {
   margin: 10px 5px 15px 20px;
 }
- .pointer {cursor: pointer;}
+
+.pointer {cursor: pointer;}
+
 p.b {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,12 +29,12 @@ p.b {
 body {
   background-color: lightblue;
 }
-</style>
+
 
 div.a {
-  text-align: justify; 
-  -moz-text-align-last: justify; 
-  text-align-last: justify;
+  text-align: auto; 
+  -moz-text-align-last: auto; 
+  text-align-last: auto;
 }
 
 
@@ -45,4 +52,5 @@ div.a {
    -webkit-flex: 1; 
    flex: 1;
 }
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZOkGJo9EhKiDLiMGxQiIzaMonJFlQmFQIyEF2PRNrCZ6qz_vJ" alt="Juntos" width="400" height="300">
+
+
