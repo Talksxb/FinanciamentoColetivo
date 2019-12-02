@@ -3,9 +3,13 @@ h1
     color: blue;
     font-weight: bold;
 }
-/*
-Isso é um comentario
-*/
+
+<style>
+p.ex1 {
+  margin: 10px 5px 15px 20px;
+}
+</style>
+
 #tituloform
 {
     font-style: italic;
@@ -19,4 +23,25 @@ Isso é um comentario
 body 
 {
     background-image: url("../imagens/fundo.jpg");
+}
+
+div.a {
+  text-align: justify; 
+  -moz-text-align-last: justify; 
+  text-align-last: justify;
+}
+
+#main {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: -webkit-flex; 
+  -webkit-align-items: center; 
+  display: flex;
+  align-items: center;
+}
+
+#main div {
+   -webkit-flex: 1; 
+   flex: 1;
 }
