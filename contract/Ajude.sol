@@ -2,7 +2,7 @@ pragma solidity 0.5.13;
 
 contract Ajude {
 
-  address payable public ong;
+  address doacao public ong;
   string public nomeDoador;
   uint public prazofinal;
   
@@ -16,7 +16,7 @@ contract Ajude {
         return address(this).balance;
         }
     
-    function doe (string memory _nomeDoador) public payable returns (bool) {
+    function doe (string memory _nomeDoador) public doacao returns (bool) {
         nomeDoador = _nomeDoador;
         require(block.number < prazofinal);
         return true;
