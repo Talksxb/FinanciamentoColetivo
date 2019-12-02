@@ -4,26 +4,17 @@ h1
     font-weight: bold;
 }
 
+h1 {
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+
 <style>
 p.ex1 {
   margin: 10px 5px 15px 20px;
 }
 </style>
-
-#tituloform
-{
-    font-style: italic;
-}
-
-.esverdeado
-{
-    background-color: lightgreen;
-}
-
-body 
-{
-    background-image: url("../imagens/fundo.jpg");
-}
 
 div.a {
   text-align: justify; 
