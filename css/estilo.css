@@ -18,6 +18,10 @@ p.ex1 {
 p.b {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  background-color: lightblue;
+}
 </style>
 
 div.a {
@@ -25,9 +29,7 @@ div.a {
   -moz-text-align-last: justify; 
   text-align-last: justify;
 }
-body {
-  background-color: lightblue;
-}
+
 
 #main {
   width: 220px;
