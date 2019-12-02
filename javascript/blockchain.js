@@ -20,7 +20,7 @@ function gettotalarrecadado() {
     });
 }
 
-function executePayment() {
+function doe() {
     var amount = document.frmPayment.amount.value;       
     if (amount<1000000000) {
         alert("O valor mínimo de doação é: 1 wei!");
@@ -34,22 +34,22 @@ function executePayment() {
     }; 
     contract.doe(doador, additionalSettings)
     .then( (tx) => {
-        console.log("executePayment - Transaction ", tx);   
+        console.log("doe - Doando ", tx);   
         boxCommStatus.innerHTML = "Doação realizada com sucesso!";
         tx.wait()
         .then( (resultFromContract) => {
-            console.log("executePayment - o total arrecadado é", resultFromContract);
+            console.log("doe - o total arrecadado é", resultFromContract);
             gettotalarrecadado();
             boxCommStatus.innerHTML = "Doação confirmada";
         })        
         .catch( (err) => {
-            console.error("executePayment - after tx being mint");
+            console.error("doe - after tx being mint");
             console.error(err);
             boxCommStatus.innerHTML = "Algo deu errado com a sua doação" + err.message;
         })
     })
     .catch( (err) => {
-        console.error("executePayment - doação confirmada");
+        console.error("doe - doação confirmada");
         console.error(err);
         boxCommStatus.innerHTML = "Algo deu errado com a sua doação " + err.message;
     })
