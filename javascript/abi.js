@@ -16,14 +16,14 @@ var contractAbi = [
 				"type": "bool"
 			}
 		],
-		"doacao": true,
-		"stateMutability": "doacao",
+		"payable": true,
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
 		"inputs": [],
-		"doacao": false,
-		"stateMutability": "nondoacao",
+		"payable": false,
+		"stateMutability": "nonpayable",
 		"type": "constructor"
 	},
 	{
@@ -37,8 +37,8 @@ var contractAbi = [
 				"type": "bool"
 			}
 		],
-		"doacao": false,
-		"stateMutability": "nondoacao",
+		"payable": false,
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -47,12 +47,12 @@ var contractAbi = [
 		"name": "ong",
 		"outputs": [
 			{
-				"internalType": "address doacao",
+				"internalType": "address payable",
 				"name": "",
 				"type": "address"
 			}
 		],
-		"doacao": false,
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
@@ -67,7 +67,7 @@ var contractAbi = [
 				"type": "uint256"
 			}
 		],
-		"doacao": false,
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
@@ -82,7 +82,7 @@ var contractAbi = [
 				"type": "string"
 			}
 		],
-		"doacao": false,
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	}
