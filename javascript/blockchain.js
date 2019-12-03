@@ -1,5 +1,6 @@
 var contractAddress = "0x5abf7251632F3D4a0450Ddfd04334c8Bc0acfbDe";
 var provider = new ethers.providers.Web3Provider(web3.currentProvider);
+ethereum.enable();
 var signer = provider.getSigner();
 var contract = new ethers.Contract(contractAddress, contractAbi, signer);
 
@@ -49,9 +50,8 @@ function totalarrecadado() {
         .catch((err) => {
             console.error(err);
             alert("Em breve, a autorização do Metamask irá surgir, pedindo para confirmar a transação");
-            ethereum.enable();
             alert("Após a confirmação, a página será atualizada!!");
-            document.location = "index.html";
+            
         });
 }
 
