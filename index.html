@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Doações realizadas com Ether.</title>
+    <title>Doações realizadas em Ether.</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <h1>Ajude a nossa causa!</h1>
     
-    <h3>Já arrecadamos o total de: <span id="boxBalance">0</span>  
+    <h3>Já arrecadamos o total de: <span id="boxBalance">0</span>  <div class="e">
+        <button onclick="totalarrecadado()">Clique aqui para saber!</button>
+        </div class="e">
     </h3>
-    <div class="e">
-    <button onclick="gettotalarrecadado()">Clique aqui para saber!</button>
-    </div class="e">
     <hr>
     <form name="frmPayment" id="frmPayment" action="#" method="get" onsubmit="executePayment(); return false;">
         <div class="a">
-            <label for="doador">Queremos nos conectar com que nos ajuda! Deixe o seu e-mail aqui: </label>
+            <label for="nomeDoador">Queremos nos conectar com que nos ajuda! Deixe o seu e-mail aqui: </label>
         </div class="a">
         <div class="a">
-            <input type="text" name="doador" id="doador">
+            <input type="text" name="nomeDoador" id="nomeDoador">
         </div class="a">
         <div>
             &nbsp;
@@ -54,8 +53,8 @@
     <script src="javascript/abi.js"></script>
     <script src="javascript/blockchain.js"></script>
     <script>
-        gettotalarrecadado();
-    </script>
+            totalarrecadado();
+        </script>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTZOkGJo9EhKiDLiMGxQiIzaMonJFlQmFQIyEF2PRNrCZ6qz_vJ" alt="Juntos" width="400" height="300">
 
 </body>

@@ -1,9 +1,9 @@
-function gettotalarrecadado() {
+function totalarrecadado() {
     var boxBalance = document.getElementById("boxBalance");
-    console.log("gettotalarrecadado - estamos processando a sua doação");
-    contract.gettotalarrecadado()
+    console.log("totalarrecadado - estamos calculando!");
+    contract.totalarrecadado()
         .then((resultFromContract) => {
-            console.log("gettotalarrecadado - o total é", resultFromContract);
+            console.log("totalarrecadado - o total é", resultFromContract);
             boxBalance.innerHTML = resultFromContract;
         })
         .catch((err) => {

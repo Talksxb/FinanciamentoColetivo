@@ -3,26 +3,26 @@ var provider = new ethers.providers.Web3Provider(web3.currentProvider);
 var signer = provider.getSigner();
 var contract = new ethers.Contract(contractAddress, contractAbi, signer);
 
-function doe() {
+function executePayment() {
     var amount = document.frmPayment.amount.value;       
-    if (amount<1000000000) {
+    if (amount<0.99) {
         alert("O valor mínimo de doação é: 1 wei!");
         return false;
     }
-    var doador = document.frmPayment.doador.value;
+    var nomeDoador = document.frmPayment.nomeDoador.value;
     var boxCommStatus = document.getElementById("boxCommStatus");
     boxCommStatus.innerHTML = "mais alguns segundos, estamos enviando a sua doação!";
     var additionalSettings = {
         value: ethers.utils.parseUnits(amount, 'wei')
     }; 
-    contract.doe(doador, additionalSettings)
+    contract.doe(nomeDoador, additionalSettings)
     .then( (tx) => {
         console.log("doe - Doando ", tx);   
         boxCommStatus.innerHTML = "Doação realizada com sucesso!";
         tx.wait()
         .then( (resultFromContract) => {
             console.log("doe - o total arrecadado é", resultFromContract);
-            gettotalarrecadado();
+            totalarrecadado();
             boxCommStatus.innerHTML = "Doação confirmada";
         })        
         .catch( (err) => {

@@ -4,7 +4,7 @@ var contractAbi = [
 		"inputs": [
 			{
 				"internalType": "string",
-				"name": "_doador",
+				"name": "_nomeDoador",
 				"type": "string"
 			}
 		],
